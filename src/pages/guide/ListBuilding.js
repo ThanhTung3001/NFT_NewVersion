@@ -19,8 +19,10 @@ const ListBuilding = ({ listItem, onClick = () => { } }) => {
       <div class="village-title">{listItem.title}</div>
       <div id="village-content" class="row m-0 m-auto">
         {listItem.items.map((item) => (
-          <div class="building-detail col-2 " onClick={handleChangeActiveItem(item)}>
-            <img src={item.img} alt="img error" />
+          <div class="building-detail col-6 col-sm-4 col-md-3 col-lg-2 " onClick={handleChangeActiveItem(item)}>
+            <img src={item.img} alt="img error" style={{
+              width:'100%'
+            }} />
             <div id="name">{item.title}</div>
           </div>
         ))}

@@ -34,7 +34,7 @@ export default function Home() {
                       class="position-absolute"
                       id="sub-background-layer"
                     ></div>
-                    <div class="aaa-hero-base-strategy-game" style={{
+                    <div class="aaa-hero-base-strategy-game" id="big-title" style={{
                       fontSize:isMobile?'30px':'700 30px/100% Barlow'
                     }} >
                       AAA HERO-BASED

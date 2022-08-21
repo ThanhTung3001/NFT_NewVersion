@@ -6,7 +6,7 @@
 #guide {
   background: linear-gradient(90.65deg, rgba(59, 66, 96, 1.00) 2.338569425046444%, rgba(59, 55, 85, 1.00) 30.52082061767578%, rgba(60, 46, 77, 1.00) 60.20832061767578%, rgba(61, 30, 59, 1.00) 100%);
   backdrop-filter: blur(15px);
-  overflow: auto;
+  overflow: hidden;
 }
 
 #guide #background-layer {
@@ -92,7 +92,7 @@
 
 
 #guide #village-content{
-  width: 982px;
+  width: 100%;
   margin-bottom: 100px!important;
 }
 
@@ -123,4 +123,27 @@
   display: inline;
   text-align: center;
   font: 400 italic 70px 'Barlow';
+}
+@media screen and(max-width:750px) {
+  #andMore{
+    font-family: 'Barlow';
+font-size: 20px;
+font-style: italic;
+font-weight: 400;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: center;
+
+  }
+  
+}
+#advisor .col-12{
+  background: #1F2647;
+  height: 100px;
+  border-radius: 20px;
+  margin-top: 40px;
+  font-size: 44px;
+  align-items: center;
+  text-align: center;
+  line-height: 100px;
 }

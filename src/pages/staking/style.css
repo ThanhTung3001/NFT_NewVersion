@@ -186,3 +186,110 @@
   bottom: -42px;
   right: 55px;
 }
+#title_mobile{
+ 
+  font-family: 'Barlow';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.btn-active-gray{
+  background: #D6D6D6;
+  color: #000000 !important;
+  border-radius: 15px;
+  font-family: 'Barlow';
+font-size: 15px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+width: 100%;
+text-align: center;
+
+
+
+}
+.btn-light{
+  font-family: 'Barlow';
+font-size: 15px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000 !important;
+background: #FFFFFF;
+min-width: 130px !important;
+text-align: center;
+}
+.btn-second-gray{
+  width: 100%;
+  background: #2C2C2C;
+  font-family: 'Barlow';
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+  color: #FFFFFF !important;
+  border-radius: 15px;
+  
+}
+#main_img img{
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+#reware{
+  background: #152035;
+  height: 300px;
+  border-radius: 17px;
+  margin: 15px;
+  
+}
+.text-left{
+  font-family: 'Barlow';
+font-size: 20px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.card-items{
+  height: 500px;
+padding: 30px;
+border-radius: 20px;
+background: #151720;
+}
+.card-items img{
+height: 200px;
+border-radius: 20px;
+
+}
+.card-items .title{
+  font-family: 'Barlow';
+font-size: 40px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: center;
+margin-top: 20px;
+
+}
+.card-items .subItems{
+  margin-top: 10px;
+  font-family: 'Barlow';
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+color: #DEDEDEC9 !important;
+}
+.bg_primary{
+  background-color: #1F2647 !important;
+}

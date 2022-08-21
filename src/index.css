@@ -229,3 +229,8 @@ video#video-1 {
   background-color: #17222c !important;
 
 }
+@media screen and (max-width: 800px) {
+   #big-title{
+    font-size: 36px !important;
+   }
+}

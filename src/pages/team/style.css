@@ -365,3 +365,93 @@ a:hover {
 #img_100{
   width: 100% !important;
 }
+@media screen and (max-width: 800px) {
+  #team #banner{
+    background-size: contain;
+    height: 180px;
+    margin: 0px;
+  }
+  #team #banner-header{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 25px;
+    margin-bottom:0px !important
+  }
+  #team #banner-text{
+    font-size: 12px;
+  }
+  .card{
+    height: 250px;
+    background-color: #000000;
+    align-self: center;
+    margin-top: 10px;
+  }
+  .card img{
+    position: relative;
+    top: -20px;
+    width: 90%;
+  }
+  #advisor .col-12{
+    background: #1F2647;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 44px;
+    align-items: center;
+    text-align: center;
+    line-height: 100px;
+  }
+  #concept-art-by-text .text-left{
+    text-align: center !important;
+  }
+  #culu-art-station{
+    width: 200px;
+    margin:30px 0 30px 0;
+  }
+  #team .title{
+    font-size: 25px !important;
+  }
+  #img_100{
+    width: 250px !important;
+    height: 250px !important;
+  }
+  #graphic-engineer-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  #team #cg3d-container #carousel-cg3d .carousel-item{
+    padding: 0px !important;
+  }
+  #graphic-engineer-title{
+    font-size: 20px !important;
+    margin-right: 0 !important;
+  }
+  #team #graphic-engineer-title{
+    margin-right: 0px !important;
+  }
+  #team #graphic-engineer-img{
+    height: 250px !important;
+  }
+  .cg3d-text{
+    font-size: 7px !important;
+    line-height: 9px !important;
+  }
+  #graphic-engineer-container{
+    padding: 50px 0px !important;
+  }
+  .carousel-inner.text-center.pb-5{
+    height: 650px !important;
+  }
+  #graphic-engineer-title{
+    min-width: 200px;
+    padding:30px 0 30px 45px !important;
+  }
+  #content-concept-art-by{
+    margin-bottom: 50px !important;
+  }
+  #cg3d-container{
+     margin-bottom: 0px !important;
+  }
+}
