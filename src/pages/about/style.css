@@ -638,3 +638,6 @@ span.carousel-control-next-icon{
 #read-more{
   display: flex;
 }
+#about .text-container{
+  width: 480px !important;
+}

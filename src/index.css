@@ -217,3 +217,15 @@ text-align: left;
   top: 50% !important;
 
 }
+video#video-1 {
+  border-radius: 20px;
+}
+#icon_white{
+  fill: white;
+}
+#guide .quote{
+  font: 700 15px 'Barlow';
+  border-radius: 20px;
+  background-color: #17222c !important;
+
+}

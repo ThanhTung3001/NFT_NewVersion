@@ -313,6 +313,7 @@ export default function Home() {
                       style={{
                         overflowX: "scrool",
                         overflowY: "hidden",
+                        width:1000
                       }}
                     >
                       <div id="time-line">
@@ -338,7 +339,7 @@ export default function Home() {
                             <div id="line-2" class="line">
                               <div class="stage">Q2 2022</div>
                               <div class="stage-title">
-                                Gamrt & Graphics
+                              Game Art & Graphics 
                                 <br /> Released
                               </div>
                             </div>

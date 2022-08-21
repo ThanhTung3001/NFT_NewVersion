@@ -28,7 +28,9 @@ export default function Video(props) {
 
 
   return (
-    <div class="w-100 position-relative video-container" onClick={handleClickPlay}>
+    <div class="w-100 position-relative video-container" onClick={handleClickPlay} style={{
+      borderRadius:20
+    }}>
       <video {...props} class={props.class + " video"}>
         <source src={props.src} type={props.type} />
       </video>

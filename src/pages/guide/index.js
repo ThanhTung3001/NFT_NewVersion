@@ -26,12 +26,15 @@ export default function Guide() {
             Upgrades on buildings help unlock more content which will arm your village with more sophisticated troops and defenses.
           </div>
           <div class="d-flex justify-content-center">
-            <div class="text-center quote position-relative mt-4">
-              <span id="vision-quote-start">"</span>
+            <div class="text-center quote position-relative mt-4 ">
+             
               <span>
+              <span id="vision-quote-start">"</span>
                 This is not the complete version, it is for beta only.
-                <br />We will update with better and complete versions soon.</span>
-              <span id="vision-quote-end">"</span>
+                <br />We will update with better and complete versions soon.
+                <span id="vision-quote-end">"</span>
+                </span>
+             
             </div>
           </div>
           <div id="search" class="bg-light text-dark mx-auto d-flex align-items-center position-relative">

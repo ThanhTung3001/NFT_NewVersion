@@ -21,7 +21,7 @@ export default function Team() {
         </div>
 
         <div class="title">OUR TEAM</div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide"  data-interval="false" >
           <div class="carousel-inner container d-block">
             <div class="carousel-item active">
               <div class="content-ourteam">
@@ -206,9 +206,9 @@ export default function Team() {
             </div>
           </div>
          
-          <div id="cg3d-container" class="mb-5 pb-5">
+          <div id="cg3d-container" class="mb-5 pb-5" >
             <div id="carousel-cg3d" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
-              <div class="carousel-inner text-center pb-5">
+              <div class="carousel-inner text-center pb-5" style={{height:1100}}>
                 <div class="carousel-item first active">
                 <div id="graphic-engineer-container" class="d-flex">
                 <div id="graphic-engineer-title" class="text-left d-flex align-items-center">
@@ -289,7 +289,7 @@ export default function Team() {
                   <img src="images/bg2_story.png" id="img_100"/>
                 </div>
                 </div>
-                  <div class="d-flex">
+                  <div class="d-flex" >
                     
                     <div id="content-left" class="pr-4">
                       <p class="cg3d-text">

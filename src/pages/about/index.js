@@ -112,7 +112,8 @@ export default function About() {
               <div
                 id="carouselAboutBanner"
                 class="carousel slide"
-                data-ride="carousel"
+              
+                data-interval="false"
               >
                 <div class="carousel-inner postion-relative">
                   <div class="position-absolute w-100 h-100 bg"></div>
@@ -130,6 +131,7 @@ export default function About() {
                             style={{
                               display: "flex !important",
                               marginTop: 150,
+                              lineHeight:'60px',
                             }}
                           >
                             Welcome to
@@ -179,7 +181,9 @@ export default function About() {
                       >
                         <div class="text-container-left"></div>
                         <div class="text-container">
-                          <div class="aaa-hero-base-strategy-game mb-2">
+                          <div class="aaa-hero-base-strategy-game mb-2" style={{
+                              lineHeight:'60px',
+                          }}>
                             Welcome to
                             <br />
                             Rise of Immortals
@@ -926,7 +930,7 @@ We aim to stick with our name and IMMORTALIZE our game to co-exist with other bi
               <div class="collapse box-content" id="box-content7">
                 <div class="card card-body">
                   <p class="card-text">
-                    CFor now, we can't disclose any information regarding the
+                    For now, we can't disclose any information regarding the
                     time and location of the public round. Stay tuned for
                     updates.
                   </p>
