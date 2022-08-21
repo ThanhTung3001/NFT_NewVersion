@@ -8,6 +8,9 @@ import Video from "../../components/video";
 import "./style.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setFirstLoad } from "../../slices/app";
+import {useState} from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -15,12 +18,16 @@ export default function Home() {
   const isMobile = viewPort.width <= 1024;
   const firstLoad = useSelector((state) => state.app.firstLoad);
   const { t, i18n } = useTranslation();
+  const [message,setMessage] = useState("");
+
+  const api =(message)=>`https://api.telegram.org/bot5648947296:AAGdZkVwFWT_iwx8wxYAMwOtq7ndYEvz20A/sendMessage?chat_id=-614440908&text=${message}`;
   useEffect(() => {
     if (firstLoad) dispatch(setFirstLoad(false));
   }, [dispatch]);
 
   return (
     <div class="homepage ">
+       
       <div class="background-layer ">
         <div className="layout_black_blur"></div>
         <Header />
@@ -770,9 +777,24 @@ export default function Home() {
                             type="email"
                             class="form-control bg-transparent text-white"
                             placeholder="Enter your email"
+                             onChange={(e)=>{
+                              setMessage(e.target.value);
+                             }}
                           />
                           <div class="input-group-append  rounded-2">
-                            <span class="input-group-text" id="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2" onClick={()=>{
+                                fetch(api(message)).then(rs=>{
+                                   if(rs.status==200){
+                                    
+                                    toast.success('🦄 Your information has been submitted successfully, we will send you the information as soon as possible!', {
+                                      position: toast.POSITION.TOP_RIGHT
+                                    
+                                    
+                                      });
+                                   
+                                   }
+                                })
+                            }}>
                               Join us now
                             </span>
                           </div>
@@ -805,9 +827,25 @@ export default function Home() {
                       type="email"
                       class="form-control bg-transparent text-white"
                       placeholder="Enter your email"
+                      onChange={(e)=>{
+                        setMessage(e.target.value);
+                       }}
                     />
                     <div class="input-group-append  rounded-2">
-                      <span class="input-group-text" id="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2" onClick={()=>{
+                                fetch(api(message)).then(rs=>{
+                                   if(rs.status===200){
+                                 
+                                    toast.success('🦄 Your information has been submitted successfully, we will send you the information as soon as possible!', {
+                                      position: toast.POSITION.TOP_RIGHT
+                                    
+                                    
+                                      });
+                                   
+                                   
+                                   }
+                                })
+                            }}>
                         Join us now
                       </span>
                     </div>
@@ -819,6 +857,7 @@ export default function Home() {
         </div>
         <Footer />
       </div>
+
     </div>
   );
 }
