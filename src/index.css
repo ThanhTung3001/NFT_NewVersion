@@ -234,3 +234,6 @@ video#video-1 {
     font-size: 36px !important;
    }
 }
+.Toastify__toast-body div{
+  color: #17222c !important;
+}

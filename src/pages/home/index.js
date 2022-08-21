@@ -9,7 +9,7 @@ import "./style.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setFirstLoad } from "../../slices/app";
 import {useState} from 'react';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div class="homepage ">
-       
+        <ToastContainer autoClose={5000} />
       <div class="background-layer ">
         <div className="layout_black_blur"></div>
         <Header />
@@ -787,7 +787,7 @@ export default function Home() {
                                    if(rs.status==200){
                                     
                                     toast.success('🦄 Your information has been submitted successfully, we will send you the information as soon as possible!', {
-                                      position: toast.POSITION.TOP_RIGHT
+                                      position: toast.POSITION.BOTTOM_RIGHT
                                     
                                     
                                       });
@@ -837,7 +837,7 @@ export default function Home() {
                                    if(rs.status===200){
                                  
                                     toast.success('🦄 Your information has been submitted successfully, we will send you the information as soon as possible!', {
-                                      position: toast.POSITION.TOP_RIGHT
+                                      position: toast.POSITION.BOTTOM_RIGHT
                                     
                                     
                                       });
